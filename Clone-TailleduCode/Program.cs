@@ -55,18 +55,29 @@ namespace Clone_TailleduCode
                 Console.Error.WriteLine("nbElevators   " + nbElevators);
                 Console.Error.WriteLine("nbAdditionalElevators   " + nbAdditionalElevators);
 
-                int copieElevator = 0;
-                int i = 0;
+                //int copieElevator = 0;
+                //int i = 0;
 
-                while (i < elevatorFloor.Count())
+                ////Etage de l'elevator
+                //while (i < elevatorFloor.Count())
+                //{
+                //    if (elevatorFloor[i] == cloneFloor)
+                //    {
+                //        copieElevator = elevatorPos[i];
+
+                //    }
+                //    i = i + 1;
+                //}
+                int copieElevator = 0;
+                if (cloneFloor > 0)
                 {
-                    if (elevatorFloor[i] == cloneFloor)
-                    {
-                        copieElevator = elevatorPos[i];
-                        Console.Error.WriteLine("copie elevelator " + copieElevator);
-                    }
-                    i = i + 1;
+                    int temp = elevatorFloor.IndexOf(cloneFloor);
+                    copieElevator = elevatorPos[temp];
                 }
+
+
+                //Console.Error.WriteLine("copie elevelator " + copieElevator);
+                //Console.Error.WriteLine("result" + result);
 
                 if ((clonePos == -1) || (elevatorPos.Count() > 0) && (copieElevator == clonePos))
                 {
@@ -79,13 +90,11 @@ namespace Clone_TailleduCode
                 //    elevatorFloor.Add(cloneFloor);
                 //    elevatorPos.Add(clonePos);
 
-                //    //Console.Error.WriteLine("elevator ajouter le dernier " + elevatorPos[elevatorPos.Count() - 1] );
+               //    //Console.Error.WriteLine("elevator ajouter le dernier " + elevatorPos[elevatorPos.Count() - 1] );
                 //}
                 else if ((direction == "LEFT") && (clonePos == 0))
                 {
                     Console.WriteLine("BLOCK");
-
-
                 }
                 else if (clonePos == (width - 1))
                 {
