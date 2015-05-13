@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Clone_TailleduCode
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             string[] inputs;
             inputs = Console.ReadLine().Split(' ');
             int nbFloors = int.Parse(inputs[0]); // nombre étages
-            int width = int.Parse(inputs[1]); // largeur de la zone 
+            int width = int.Parse(inputs[1]); // largeur de la zone
             int nbRounds = int.Parse(inputs[2]); // maximum number of rounds
             int exitFloor = int.Parse(inputs[3]); // étage de l'aspirateur
             int exitPos = int.Parse(inputs[4]); // position aspirateur a son étage
@@ -32,7 +30,6 @@ namespace Clone_TailleduCode
                 Console.Error.WriteLine("etage elevator   " + elevatorFloor[i]);
                 Console.Error.WriteLine("etage pos   " + elevatorPos[i]);
             }
-
 
             // game loop
             while (true)
@@ -75,7 +72,6 @@ namespace Clone_TailleduCode
                     copieElevator = elevatorPos[temp];
                 }
 
-
                 //Console.Error.WriteLine("copie elevelator " + copieElevator);
                 //Console.Error.WriteLine("result" + result);
 
@@ -99,11 +95,9 @@ namespace Clone_TailleduCode
                 else if (clonePos == (width - 1))
                 {
                     Console.WriteLine("BLOCK");
-
                 }
                 else
                 {
-
                     if ((cloneFloor == exitFloor) && (clonePos != copieElevator))
                     {
                         if ((clonePos > exitPos) && (direction == "RIGHT"))
@@ -118,7 +112,6 @@ namespace Clone_TailleduCode
                         {
                             Console.WriteLine("WAIT");
                         }
-
                     }
                     else if (clonePos != copieElevator)
                     {
@@ -134,16 +127,13 @@ namespace Clone_TailleduCode
                         {
                             Console.WriteLine("WAIT");
                         }
-
                     }
                     else
                     {
                         Console.WriteLine("WAIT");
-
                     }
                 }
             }
         }
-
     }
 }

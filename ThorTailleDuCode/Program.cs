@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ThorTailleDuCode
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            char[] sep = new char[] { ' ' };            
+            char[] sep = new char[] { ' ' };
             string line = Console.ReadLine();
             string[] split = line.Split(sep);
             int positionxeclair = Convert.ToInt32(split[0]);
@@ -20,7 +16,6 @@ namespace ThorTailleDuCode
 
             while (true)
             {
-
                 int nbrtour = Convert.ToInt32(Console.ReadLine());
 
                 if ((positionxthor < positionxeclair) && (positionythor > positionyeclair))
@@ -68,7 +63,6 @@ namespace ThorTailleDuCode
                     positionxthor = positionxthor + 1;
                     positionythor = positionythor + 1;
                 }
-
             }
         }
     }
