@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teeds", "Teeds\Teeds.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calcul maya", "calcul maya\calcul maya.csproj", "{A93C4CD2-913E-43BB-9A27-622529EC3BC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Super Calculateur", "Super Calculateur\Super Calculateur.csproj", "{CC2390C5-003F-4AB8-9039-D46848265102}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodedUITestProject1", "CodedUITestProject1\CodedUITestProject1.csproj", "{467D151C-F446-4D55-BF60-33B19D595B0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{A93C4CD2-913E-43BB-9A27-622529EC3BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A93C4CD2-913E-43BB-9A27-622529EC3BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A93C4CD2-913E-43BB-9A27-622529EC3BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC2390C5-003F-4AB8-9039-D46848265102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC2390C5-003F-4AB8-9039-D46848265102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC2390C5-003F-4AB8-9039-D46848265102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC2390C5-003F-4AB8-9039-D46848265102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{467D151C-F446-4D55-BF60-33B19D595B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{467D151C-F446-4D55-BF60-33B19D595B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{467D151C-F446-4D55-BF60-33B19D595B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{467D151C-F446-4D55-BF60-33B19D595B0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
