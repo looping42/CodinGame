@@ -6,63 +6,80 @@ namespace ThorTailleDuCode
     {
         private static void Main(string[] args)
         {
-            char[] sep = new char[] { ' ' };
-            string line = Console.ReadLine();
-            string[] split = line.Split(sep);
-            int positionxeclair = Convert.ToInt32(split[0]);
-            int positionyeclair = Convert.ToInt32(split[1]);
-            int positionxthor = Convert.ToInt32(split[2]);
-            int positionythor = Convert.ToInt32(split[3]);
+            int[] l = Array.ConvertAll(Console.ReadLine().Split(new char[] { ' ' }), int.Parse);
+            int x = l[0];
+            int y = l[1];
+            int o = l[2];
+            int p = l[3];
+            string r = "";
+            var n = "NE";
+            var e = "E";
+            var s = "SE";
+            var m = "N";
+            var k = "S";
+            var w = "NW";
+            var f = "W";
+            var g = "SW";
 
             while (true)
             {
-                int nbrtour = Convert.ToInt32(Console.ReadLine());
+                var t = Console.ReadLine();
+                if (o < x)
+                {
+                    if (p > y)
+                    {
+                        r = n;
+                    }
+                    if (p == y)
+                    {
+                        r = e;
+                    }
+                    if (p < y)
+                    {
+                        r = s;
+                    }
+                }
+                else if (o == x)
+                {
+                    if (p > y)
+                    {
+                        r = m;
+                    }
+                    else
+                    {
+                        r =k;
+                    }
+                }
+                else if (p > y)
+                {
+                    r = w;
+                }
+                else if (p == y)
+                {
+                    r = f;
+                }
+                else
+                {
+                    r = g;
+                }
 
-                if ((positionxthor < positionxeclair) && (positionythor > positionyeclair))
+                if ((r == n) || (r == e) || (r == s))
                 {
-                    Console.WriteLine("NE");
-                    positionxthor = positionxthor + 1;
-                    positionythor = positionythor - 1;
+                    o = o + 1;
                 }
-                else if ((positionxthor > positionxeclair) && (positionythor > positionyeclair))
+                if ((r == s) || (r == g) || (r == k))
                 {
-                    Console.WriteLine("NW");
-                    positionxthor = positionxthor - 1;
-                    positionythor = positionythor - 1;
+                    p = p + 1;
                 }
-                else if ((positionxthor < positionxeclair) && (positionythor == positionyeclair))
+                if ((r == n) || (r == m) || (r == w))
                 {
-                    Console.WriteLine("E");
-                    positionxthor = positionxthor + 1;
+                    p = p - 1;
                 }
-                else if ((positionxthor > positionxeclair) && (positionythor == positionyeclair))
+                if ((r == f) || (r == w) || (r == g))
                 {
-                    Console.WriteLine("W");
-                    positionxthor = positionxthor - 1;
+                    o = o - 1;
                 }
-                else if ((positionxthor == positionxeclair) && (positionythor > positionyeclair))
-                {
-                    Console.WriteLine("N");
-                    positionythor = positionythor - 1;
-                }
-                else if ((positionxthor == positionxeclair) && (positionythor < positionyeclair))
-                {
-                    Console.WriteLine("S");
-                    positionythor = positionythor + 1;
-                }
-                else if ((positionxthor > positionxeclair) && (positionythor < positionyeclair) && (positionythor < 18))
-                {
-                    Console.WriteLine("SW");
-                    positionxthor = positionxthor - 1;
-                    positionythor = positionythor + 1;
-                    Console.Error.WriteLine(positionythor);
-                }
-                else if ((positionxthor < positionxeclair) && (positionythor < positionyeclair))
-                {
-                    Console.WriteLine("SE");
-                    positionxthor = positionxthor + 1;
-                    positionythor = positionythor + 1;
-                }
+                Console.WriteLine(r);
             }
         }
     }

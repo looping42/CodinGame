@@ -8,132 +8,95 @@ namespace Clone_TailleduCode
     {
         private static void Main(string[] args)
         {
-            string[] inputs;
-            inputs = Console.ReadLine().Split(' ');
-            int nbFloors = int.Parse(inputs[0]); // nombre étages
-            int width = int.Parse(inputs[1]); // largeur de la zone
-            int nbRounds = int.Parse(inputs[2]); // maximum number of rounds
-            int exitFloor = int.Parse(inputs[3]); // étage de l'aspirateur
-            int exitPos = int.Parse(inputs[4]); // position aspirateur a son étage
-            int nbTotalClones = int.Parse(inputs[5]); //  le nombre de clones qui sortiront du générateur au cours de la partie
-            int nbAdditionalElevators = int.Parse(inputs[6]); // nombre d'ascenseur additionnel
-            int nbElevators = int.Parse(inputs[7]); //le nombre d'ascenseurs présents sur la zone
+string[] I = Console.ReadLine().Split(' ');         
+int F = int.Parse(I[0]); 
+int W = int.Parse(I[1]); 
+int N = int.Parse(I[2]); 
+int E = int.Parse(I[3]); 
+int X = int.Parse(I[4]); 
+int T = int.Parse(I[5]); 
+int A = int.Parse(I[6]); 
+int V = int.Parse(I[7]);
+List<int> Y = new List<int>();
+List<int> Z = new List<int>();
+for (int i = 0; i < V; i++)
+{
+I = Console.ReadLine().Split(' ');
+Z.Add(int.Parse(I[0]));
+Y.Add(int.Parse(I[1])); 
+}
+       
+while (true)
+{
+I = Console.ReadLine().Split(' ');
+int U = int.Parse(I[0]);
+int J = int.Parse(I[1]);
+String B = I[2];
 
-            List<int> elevatorPos = new List<int>();
-            List<int> elevatorFloor = new List<int>();
+string r ="";
+int L = 0;
+int i = 0;
 
-            for (int i = 0; i < nbElevators; i++)
-            {
-                inputs = Console.ReadLine().Split(' ');
-                elevatorFloor.Add(int.Parse(inputs[0])); // floor on which this elevator is found
-                elevatorPos.Add(int.Parse(inputs[1])); // position of the elevator on its floor
-                Console.Error.WriteLine("etage elevator   " + elevatorFloor[i]);
-                Console.Error.WriteLine("etage pos   " + elevatorPos[i]);
-            }
+while (i < Z.Count())
+{
+if (Z[i] == U)
+{
+L = Y[i];
+}
+i = i + 1;
+}
 
-            // game loop
-            while (true)
-            {
-                inputs = Console.ReadLine().Split(' ');
-                int cloneFloor = int.Parse(inputs[0]); // floor of the leading clone
-                int clonePos = int.Parse(inputs[1]); // position of the leading clone on its floor
-                Console.Error.WriteLine("clone etage " + cloneFloor);
-                Console.Error.WriteLine("clone pos " + clonePos);
+if ((J == -1) || (Y.Count() > 0) && (L == J))
+{
+r = "WAIT";
+}
+else if ((V == 0) && (A > 0))
+{
+r = "ELEVATOR";
+A = A - 1;
+Z.Add(U);
+Y.Add(J);
+}
+else if (((B == "LEFT") && (J == 0))||(J == (W - 1)))
+{
+r = "BLOCK";
+}
+else
+{
 
-                String direction = inputs[2]; // direction of the leading clone: LEFT or RIGHT
-                Console.Error.WriteLine("direction " + direction);
+if ((U == E) && (J != L))
+{
+if ((J > X) && (B == "RIGHT")||(J < X) && (B == "LEFT"))
+{
+r = "BLOCK";
+}
+else
+{
+r = "WAIT";
+}
 
-                Console.Error.WriteLine("nombre etages " + nbFloors);
-                Console.Error.WriteLine("largeur zone   " + width);
-                Console.Error.WriteLine("nombre rounds   " + nbRounds);
-                Console.Error.WriteLine("etage aspirateur   " + exitFloor);
-                Console.Error.WriteLine("pos aspirateur   " + exitPos);
-                Console.Error.WriteLine("nbTotalClones   " + nbTotalClones);
-                Console.Error.WriteLine("nbElevators   " + nbElevators);
-                Console.Error.WriteLine("nbAdditionalElevators   " + nbAdditionalElevators);
+}
+else if (J != L)
+{
+if ((J > L) && (B == "RIGHT")||(J < L) && (B == "LEFT"))
+{
+r = "BLOCK";
+}
+else
+{
+r = "WAIT";
+}
 
-                //int copieElevator = 0;
-                //int i = 0;
+}
+else
+{
+Console.WriteLine("WAIT");
 
-                ////Etage de l'elevator
-                //while (i < elevatorFloor.Count())
-                //{
-                //    if (elevatorFloor[i] == cloneFloor)
-                //    {
-                //        copieElevator = elevatorPos[i];
-
-                //    }
-                //    i = i + 1;
-                //}
-                int copieElevator = 0;
-                if (cloneFloor > 0)
-                {
-                    int temp = elevatorFloor.IndexOf(cloneFloor);
-                    copieElevator = elevatorPos[temp];
-                }
-
-                //Console.Error.WriteLine("copie elevelator " + copieElevator);
-                //Console.Error.WriteLine("result" + result);
-
-                if ((clonePos == -1) || (elevatorPos.Count() > 0) && (copieElevator == clonePos))
-                {
-                    Console.WriteLine("WAIT");
-                }
-                //else if ((nbElevators == 0) && (nbAdditionalElevators > 0))
-                //{
-                //    Console.WriteLine("ELEVATOR");
-                //    nbAdditionalElevators = nbAdditionalElevators - 1;
-                //    elevatorFloor.Add(cloneFloor);
-                //    elevatorPos.Add(clonePos);
-
-               //    //Console.Error.WriteLine("elevator ajouter le dernier " + elevatorPos[elevatorPos.Count() - 1] );
-                //}
-                else if ((direction == "LEFT") && (clonePos == 0))
-                {
-                    Console.WriteLine("BLOCK");
-                }
-                else if (clonePos == (width - 1))
-                {
-                    Console.WriteLine("BLOCK");
-                }
-                else
-                {
-                    if ((cloneFloor == exitFloor) && (clonePos != copieElevator))
-                    {
-                        if ((clonePos > exitPos) && (direction == "RIGHT"))
-                        {
-                            Console.WriteLine("BLOCK");
-                        }
-                        else if ((clonePos < exitPos) && (direction == "LEFT"))
-                        {
-                            Console.WriteLine("BLOCK");
-                        }
-                        else
-                        {
-                            Console.WriteLine("WAIT");
-                        }
-                    }
-                    else if (clonePos != copieElevator)
-                    {
-                        if ((clonePos > copieElevator) && (direction == "RIGHT"))
-                        {
-                            Console.WriteLine("BLOCK");
-                        }
-                        else if ((clonePos < copieElevator) && (direction == "LEFT"))
-                        {
-                            Console.WriteLine("BLOCK");
-                        }
-                        else
-                        {
-                            Console.WriteLine("WAIT");
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("WAIT");
-                    }
-                }
-            }
+}
+}
+Console.WriteLine(r);
+}
         }
     }
+    
 }
