@@ -6,83 +6,70 @@ using System.Threading.Tasks;
 
 namespace Super_Calculateur
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            int nbrJour = int.Parse(Console.ReadLine());
+            List<KeyValuePair<int, int>> tableau = new List<KeyValuePair<int, int>>();
 
-            int N = int.Parse(Console.ReadLine());
-            Console.Error.WriteLine("N" + N);
-            List<Periode> NewPeriodRegistered = new List<Periode>();
-            for (int i = 0; i < N; i++)
+            for (int i = 0; i < nbrJour; i++)
             {
-
                 string[] inputs = Console.ReadLine().Split(' ');
-                Periode ListPeriode = new Periode();
-                ListPeriode.JourDebut = int.Parse(inputs[0]);
-                ListPeriode.Duree = int.Parse(inputs[1]);
-                ListPeriode.visit = false;
-                NewPeriodRegistered.Add(ListPeriode);
-                Console.Error.WriteLine("temp.JourDebut" + ListPeriode.JourDebut);
-                Console.Error.WriteLine("temp.Duree" + ListPeriode.Duree);
-
+                tableau.Add(new KeyValuePair<int, int>(int.Parse(inputs[0]), int.Parse(inputs[1]) + int.Parse(inputs[0]) - 1));
             }
+            tableau.Sort(Compare2);
 
-            List<Periode> listResult = new List<Periode>();
-            listResult.AddRange(NewPeriodRegistered);
-
-            //remove l'élement num 1
-
-
-            int compteurLien = 0;
-            int compteurTotal = 0;
-
-            //on sauvegarde la premiére periode afin de la comparer au autres
-            Periode PeriodeToCompare = new Periode();
-            PeriodeToCompare.JourDebut = NewPeriodRegistered[0].JourDebut;
-            PeriodeToCompare.Duree = NewPeriodRegistered[0].JourFin;
-            NewPeriodRegistered[0].visit = true;
-
-            //Boucle sur la liste de période 
-            foreach (var item in NewPeriodRegistered)
+            int[] jourDebut = new int[nbrJour];
+            int[] jourFin = new int[nbrJour];
+            int j = 0;
+            Console.Error.WriteLine("tableau");
+            foreach (KeyValuePair<int, int> item in tableau)
             {
-
-                if (((item.visit ==false )&& ((item.JourDebut >= PeriodeToCompare.JourFin) && (item.JourDebut <= PeriodeToCompare.JourDebut))
-                    || (item.visit == false) && (item.JourFin >= PeriodeToCompare.JourDebut) && (item.JourFin <= PeriodeToCompare.JourFin)))
-                {
-
-                }
-                else if (item.visit ==false )
-                {
-                    compteurLien++;
-                    PeriodeToCompare.JourDebut = item.JourDebut;
-                    PeriodeToCompare.Duree = item.Duree;
-                    item.visit =true;
-                    listResult.Add(item);
-                }
- 
-                
-                if (compteurLien > compteurTotal)
-                {
-                    compteurTotal = compteurLien;
-                }
+                Console.Error.Write("item.Key" + item.Key);
+                Console.Error.Write("item.Value" + item.Value);
+                jourDebut[j] = item.Key;
+                jourFin[j] = item.Value;
+                j = j + 1;
             }
 
-            //liste de resultat
-            foreach (var item in listResult)
+            List<int> res = SelectMaxActivities(jourDebut, jourFin);
+            foreach (var item in res)
             {
-                Console.Error.Write("Résultat debut : " + item.JourDebut);
-                Console.Error.Write("Résultat fin : " + item.JourFin);
-                Console.Error.WriteLine();
+                Console.Error.WriteLine(item);
             }
-            Console.WriteLine(compteurTotal);
+            Console.Error.WriteLine("result");
+            Console.Write(res.Count());
+
+            //Console.ReadLine();
         }
-        public class Periode
+
+        private static int Compare2(KeyValuePair<int, int> a, KeyValuePair<int, int> b)
         {
-            public int JourDebut;
-            public int Duree;
-            public int JourFin { get { return (JourDebut +Duree)-1; } }
-            public bool visit;
+            return a.Value.CompareTo(b.Value);
+        }
+
+        public static List<int> SelectMaxActivities(int[] s, int[] f)
+        {
+            //longueur tableau
+            int n = f.Length;
+            List<int> result = new List<int>();
+
+            // la premiére activité est toujours choisis
+            int i = 0;
+            result.Add(i);
+            // pour le reste
+            for (int j = 1; j < n; j++)
+            {
+                //si l'activité a un départ plus grand ou égal au temps de fin de l'activité déjà préselectionnée
+                //on l'a choisi
+                if (s[j] > f[i])
+                {
+                    result.Add(j);
+                    i = j;
+                }
+            }
+            return result;
         }
     }
 }

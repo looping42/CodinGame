@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clone-TailleduCode", "Clone-TailleduCode\Clone-TailleduCode.csproj", "{C5B8EF92-FCD0-4264-890A-9AEB43EF1607}"
 EndProject
@@ -22,6 +22,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeOfTheRing", "CodeOfTheRing\CodeOfTheRing.csproj", "{DB90A9FB-4FCC-416C-B20C-7D052AA92E32}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThorContreLesGeants", "ThorContreLesGeants\ThorContreLesGeants.csproj", "{C61C00C7-15BD-4FD9-B077-75A34BD27ABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surface", "Surface\Surface.csproj", "{A140D995-BA73-4B86-BD1E-4A2715F44512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Defibrillateur", "Defibrillateur\Defibrillateur.csproj", "{0E6565F5-7036-4564-85D2-940E25269525}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{C61C00C7-15BD-4FD9-B077-75A34BD27ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C61C00C7-15BD-4FD9-B077-75A34BD27ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C61C00C7-15BD-4FD9-B077-75A34BD27ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A140D995-BA73-4B86-BD1E-4A2715F44512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A140D995-BA73-4B86-BD1E-4A2715F44512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A140D995-BA73-4B86-BD1E-4A2715F44512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A140D995-BA73-4B86-BD1E-4A2715F44512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E6565F5-7036-4564-85D2-940E25269525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E6565F5-7036-4564-85D2-940E25269525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E6565F5-7036-4564-85D2-940E25269525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E6565F5-7036-4564-85D2-940E25269525}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

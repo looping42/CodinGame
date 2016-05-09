@@ -1,0 +1,12 @@
+E:\projet visual studio\CodinGame\Clone-TailleduCode\calcul maya\bin\Debug\calcul maya.exe.config
+E:\projet visual studio\CodinGame\Clone-TailleduCode\calcul maya\bin\Debug\calcul maya.exe
+E:\projet visual studio\CodinGame\Clone-TailleduCode\calcul maya\bin\Debug\calcul maya.pdb
+E:\projet visual studio\CodinGame\Clone-TailleduCode\calcul maya\obj\Debug\calcul maya.csprojResolveAssemblyReference.cache
+E:\projet visual studio\CodinGame\Clone-TailleduCode\calcul maya\obj\Debug\calcul maya.exe
+E:\projet visual studio\CodinGame\Clone-TailleduCode\calcul maya\obj\Debug\calcul maya.pdb
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\calcul maya\bin\Debug\calcul maya.exe.config
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\calcul maya\bin\Debug\calcul maya.exe
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\calcul maya\bin\Debug\calcul maya.pdb
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\calcul maya\obj\Debug\calcul maya.csprojResolveAssemblyReference.cache
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\calcul maya\obj\Debug\calcul maya.exe
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\calcul maya\obj\Debug\calcul maya.pdb

@@ -1,0 +1,12 @@
+E:\projet visual studio\CodinGame\Clone-TailleduCode\ThorTailleDuCode\bin\Debug\ThorTailleDuCode.exe.config
+E:\projet visual studio\CodinGame\Clone-TailleduCode\ThorTailleDuCode\bin\Debug\ThorTailleDuCode.exe
+E:\projet visual studio\CodinGame\Clone-TailleduCode\ThorTailleDuCode\bin\Debug\ThorTailleDuCode.pdb
+E:\projet visual studio\CodinGame\Clone-TailleduCode\ThorTailleDuCode\obj\Debug\ThorTailleDuCode.csprojResolveAssemblyReference.cache
+E:\projet visual studio\CodinGame\Clone-TailleduCode\ThorTailleDuCode\obj\Debug\ThorTailleDuCode.exe
+E:\projet visual studio\CodinGame\Clone-TailleduCode\ThorTailleDuCode\obj\Debug\ThorTailleDuCode.pdb
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\ThorTailleDuCode\bin\Debug\ThorTailleDuCode.exe.config
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\ThorTailleDuCode\bin\Debug\ThorTailleDuCode.exe
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\ThorTailleDuCode\bin\Debug\ThorTailleDuCode.pdb
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\ThorTailleDuCode\obj\Debug\ThorTailleDuCode.csprojResolveAssemblyReference.cache
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\ThorTailleDuCode\obj\Debug\ThorTailleDuCode.exe
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\ThorTailleDuCode\obj\Debug\ThorTailleDuCode.pdb

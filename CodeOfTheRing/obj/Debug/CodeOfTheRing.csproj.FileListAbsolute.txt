@@ -1,0 +1,6 @@
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\CodeOfTheRing\bin\Debug\CodeOfTheRing.exe.config
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\CodeOfTheRing\bin\Debug\CodeOfTheRing.exe
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\CodeOfTheRing\bin\Debug\CodeOfTheRing.pdb
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\CodeOfTheRing\obj\Debug\CodeOfTheRing.exe
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\CodeOfTheRing\obj\Debug\CodeOfTheRing.pdb
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\CodeOfTheRing\obj\Debug\CodeOfTheRing.csprojResolveAssemblyReference.cache
