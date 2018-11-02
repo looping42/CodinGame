@@ -1,6 +1,0 @@
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\HowTimeFlies\bin\Debug\HowTimeFlies.exe.config
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\HowTimeFlies\bin\Debug\HowTimeFlies.exe
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\HowTimeFlies\bin\Debug\HowTimeFlies.pdb
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\HowTimeFlies\obj\Debug\HowTimeFlies.csprojResolveAssemblyReference.cache
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\HowTimeFlies\obj\Debug\HowTimeFlies.exe
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\HowTimeFlies\obj\Debug\HowTimeFlies.pdb

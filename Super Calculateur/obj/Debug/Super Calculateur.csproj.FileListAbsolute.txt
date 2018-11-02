@@ -4,12 +4,3 @@ E:\projet visual studio\CodinGame\Clone-TailleduCode\Super Calculateur\bin\Debug
 E:\projet visual studio\CodinGame\Clone-TailleduCode\Super Calculateur\obj\Debug\Super Calculateur.csprojResolveAssemblyReference.cache
 E:\projet visual studio\CodinGame\Clone-TailleduCode\Super Calculateur\obj\Debug\Super Calculateur.exe
 E:\projet visual studio\CodinGame\Clone-TailleduCode\Super Calculateur\obj\Debug\Super Calculateur.pdb
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Super Calculateur\bin\Debug\Super Calculateur.exe.config
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Super Calculateur\obj\Debug\Super Calculateur.exe
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Super Calculateur\obj\Debug\Super Calculateur.pdb
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Super Calculateur\bin\Debug\Super Calculateur.exe
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Super Calculateur\bin\Debug\Super Calculateur.pdb
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Super Calculateur\bin\Debug\ImVader.dll
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Super Calculateur\bin\Debug\Newtonsoft.Json.dll
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Super Calculateur\bin\Debug\Newtonsoft.Json.xml
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Super Calculateur\obj\Debug\Super Calculateur.csprojResolveAssemblyReference.cache

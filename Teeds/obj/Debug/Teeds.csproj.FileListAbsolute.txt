@@ -4,9 +4,3 @@ E:\projet visual studio\CodinGame\Clone-TailleduCode\Teeds\bin\Debug\Teeds.pdb
 E:\projet visual studio\CodinGame\Clone-TailleduCode\Teeds\obj\Debug\Teeds.csprojResolveAssemblyReference.cache
 E:\projet visual studio\CodinGame\Clone-TailleduCode\Teeds\obj\Debug\Teeds.exe
 E:\projet visual studio\CodinGame\Clone-TailleduCode\Teeds\obj\Debug\Teeds.pdb
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Teeds\bin\Debug\Teeds.exe.config
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Teeds\bin\Debug\Teeds.exe
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Teeds\bin\Debug\Teeds.pdb
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Teeds\obj\Debug\Teeds.csprojResolveAssemblyReference.cache
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Teeds\obj\Debug\Teeds.exe
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Teeds\obj\Debug\Teeds.pdb

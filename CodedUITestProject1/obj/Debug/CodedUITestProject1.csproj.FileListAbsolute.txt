@@ -3,8 +3,3 @@ E:\projet visual studio\CodinGame\Clone-TailleduCode\CodedUITestProject1\bin\Deb
 E:\projet visual studio\CodinGame\Clone-TailleduCode\CodedUITestProject1\obj\Debug\CodedUITestProject1.csprojResolveAssemblyReference.cache
 E:\projet visual studio\CodinGame\Clone-TailleduCode\CodedUITestProject1\obj\Debug\CodedUITestProject1.dll
 E:\projet visual studio\CodinGame\Clone-TailleduCode\CodedUITestProject1\obj\Debug\CodedUITestProject1.pdb
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\CodedUITestProject1\bin\Debug\CodedUITestProject1.dll
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\CodedUITestProject1\bin\Debug\CodedUITestProject1.pdb
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\CodedUITestProject1\obj\Debug\CodedUITestProject1.csprojResolveAssemblyReference.cache
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\CodedUITestProject1\obj\Debug\CodedUITestProject1.dll
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\CodedUITestProject1\obj\Debug\CodedUITestProject1.pdb

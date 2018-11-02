@@ -1,0 +1,6 @@
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\bataille\bin\Debug\bataille.exe.config
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\bataille\bin\Debug\bataille.exe
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\bataille\bin\Debug\bataille.pdb
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\bataille\obj\Debug\bataille.csprojResolveAssemblyReference.cache
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\bataille\obj\Debug\bataille.exe
+E:\projetvisualstudio\CodinGame\Clone-TailleduCode\bataille\obj\Debug\bataille.pdb

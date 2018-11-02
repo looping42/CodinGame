@@ -4,9 +4,3 @@ E:\projet visual studio\CodinGame\Clone-TailleduCode\Apu Phase D'initialisation\
 E:\projet visual studio\CodinGame\Clone-TailleduCode\Apu Phase D'initialisation\obj\Debug\Apu Phase D'initialisation.csprojResolveAssemblyReference.cache
 E:\projet visual studio\CodinGame\Clone-TailleduCode\Apu Phase D'initialisation\obj\Debug\Apu Phase D'initialisation.exe
 E:\projet visual studio\CodinGame\Clone-TailleduCode\Apu Phase D'initialisation\obj\Debug\Apu Phase D'initialisation.pdb
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Apu Phase D'initialisation\bin\Debug\Apu Phase D'initialisation.exe.config
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Apu Phase D'initialisation\bin\Debug\Apu Phase D'initialisation.exe
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Apu Phase D'initialisation\bin\Debug\Apu Phase D'initialisation.pdb
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Apu Phase D'initialisation\obj\Debug\Apu Phase D'initialisation.csprojResolveAssemblyReference.cache
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Apu Phase D'initialisation\obj\Debug\Apu Phase D'initialisation.exe
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\Apu Phase D'initialisation\obj\Debug\Apu Phase D'initialisation.pdb

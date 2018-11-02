@@ -1,5 +1,0 @@
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\IndianaNiv3\bin\Debug\IndianaNiv3.exe.config
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\IndianaNiv3\bin\Debug\IndianaNiv3.exe
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\IndianaNiv3\bin\Debug\IndianaNiv3.pdb
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\IndianaNiv3\obj\Debug\IndianaNiv3.exe
-E:\projetvisualstudio\CodinGame\Clone-TailleduCode\IndianaNiv3\obj\Debug\IndianaNiv3.pdb
